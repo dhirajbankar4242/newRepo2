@@ -66,6 +66,14 @@ public class FriendServiceImpl implements FriendService{
 		return allFriend;
 	}
 
+	@Override
+	public Integer getCount() {
+		List allFriend = (List) dao.getAllFriend();
+		int size = allFriend.size();
+		return size;
+	}
+	
+
 //	@Override
 //	public List<Friend> sortFriendById() {
 //		List<Friend> sortFriendById = dao.sortFriendById();

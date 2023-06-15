@@ -15,5 +15,7 @@ public interface FriendService {
 	
 	public List<Friend> sortFriendById();
 	public List<Friend> sortFriendByName();
+	
+	public Integer getCount();
 
 }

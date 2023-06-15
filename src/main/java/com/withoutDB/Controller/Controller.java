@@ -51,6 +51,12 @@ public class Controller {
 		}
 	}
 	
+	@GetMapping("count")
+	public Integer getCount() {
+		Integer count = service.getCount();
+		return count;
+	}
+	
 	@GetMapping("sortByID")
 	public List<Friend> sortFriendbyId(){
 		List<Friend> sortFriendById = service.sortFriendById();
